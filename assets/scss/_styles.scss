@@ -1,38 +1,54 @@
 @import "_variables";
+@import "_mixin";
 
 .item1 { 
     grid-area: header;   
-    height: 100px;              
+    height: 100px;  
+    @include border-radius(5px);
+    @include box-shadow(2px, 8px, 14px, 0px, rgba(62, 75, 73, 0.25));
+    @include transition(0.3s);
+     
  }  
  .item2 { 
     grid-area: Navigation; 
+    @include border-radius(5px);
+    @include box-shadow(2px, 8px, 14px, 0px, rgba(62, 75, 73, 0.25));
+    @include transition(0.35s);
 }
  .item3 { 
     grid-area: Pagecontent; 
     height:  400px;
+    @include border-radius(5px);
+    @include box-shadow(2px, 8px, 14px, 0px, rgba(62, 75, 73, 0.25));
+    @include transition(0.4s);
  }
  .item4 { 
     grid-area: m1; 
     height:  400px;
-    
-    
-    
+    @include border-radius(5px);
+    @include box-shadow(2px, 8px, 14px, 0px, rgba(62, 75, 73, 0.25));
+    @include transition(0.5s);
  }
  .item5 {
      grid-area: m2; 
-     height:  400px;
-    
-     
+     height:  400px; 
+     @include border-radius(5px);
+     @include box-shadow(2px, 8px, 14px, 0px, rgba(62, 75, 73, 0.25));
+     @include transition(0.5s);
     }
  .item6 { 
     grid-area: m3; 
-    height:  400px;
-    
-    
+    height:  400px; 
+    @include border-radius(5px);
+    @include box-shadow(2px, 8px, 14px, 0px, rgba(62, 75, 73, 0.25)); 
+    @include transition(0.5s);
  }
  .item7 { 
     grid-area: footer; 
     height: 100px;  
+    @include border-radius(5px);
+    @include box-shadow(2px, 8px, 14px, 0px, rgba(62, 75, 73, 0.25));
+    @include transition(0.6s);
  }
  
  .grid-container {
@@ -46,6 +62,7 @@
    grid-gap: 20px;
    background-color: $blue1;
    padding: 20px;
+   
  }
  
  .grid-container > div {
